@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Практична логос</title>
+</head>
+
+<body>
+
+  <section class="section section-top mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <div class="box-preview p-5 border border-4 rounded">
+              <p data-preview="text">Lorem ipsum dolor sit amet.</p>
+              <p data-preview="text">Lorem ipsum dolor sit amet.</p>
+              <p data-preview="text">Lorem ipsum dolor sit amet.</p>
+              <p data-preview="text">Lorem ipsum dolor sit amet.</p>
+              <p data-preview="text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-btn">
+    <div class="container">
+      <div class="section-btn__btns d-flex justify-content-center">
+        <button type="button" class="btn btn-warning m-3" data-btn="btn" data-edit="edit">Edit</button>
+        <button type="button" class="btn btn-primary m-3" data-btn="btn" data-add="style">Style</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <div class="box-editor py-4 px-5 bg-light border border-4 rounded">
+              <div class="box-editor__content">
+                <div data-content-item class="box-editor__text">
+                  <textarea class="box-editor__textarea mb-3" name="" id="textarea1" cols="30" rows="10"></textarea>
+                  <div class="box-editor__btns">
+                    <button type="button" class="btn btn-danger" id="red-btn" data-add="add">Add</button>
+                    <button type="button" class="btn btn-success" data-save="save">Save</button>
+                  </div>
+                </div>
+                <div data-content-item class="box-editor__styles">
+                  <div class="row">
+                    <div class="col">
+                      <div class="style-group d-flex flex-column">
+                        <h3 class="style-group__title">Font size:</h3>
+                        <div class="style-group__radio d-flex">
+                          <div class="form-check style-radio">
+                            <input data-size="12px" class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              12px
+                            </label>
+                          </div>
+                          <div class="form-check style-radio">
+                            <input data-size="14px" class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              14px
+                            </label>
+                          </div>
+                          <div class="form-check style-radio">
+                            <input data-size="16px" class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              16px
+                            </label>
+                          </div>
+                          <div class="form-check style-radio">
+                            <input data-size="18px" class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                              18px
+                            </label>
+                          </div>
+                          <div class="form-check style-radio">
+                            <input data-size="20px" class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                              20px
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="style-group">
+                        <div class="style-group d-flex flex-column">
+                          <h3 class="style-group__title">Font Family:</h3>
+                          <select data-family class="form-select" aria-label="Default select example">
+                            <option selected value="normal">Choose option</option>
+                            <option value="italic">Cursive</option>
+                            <option value="Roboto Mono">Roboto Mono</option>
+                            <option value="Bebas Neue">Bebas Neue</option>
+                            <option value="sans-serif">Sans-serif</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="style-group">
+                        <div class="style-group d-flex flex-column">
+                          <h3 class="style-group__title">Colors:</h3>
+                          <div class="style-group__btns d-flex">
+                            <button data-color-text type="button" class="btn btn-secondary">Color of text</button>
+                            <button data-bg-color type="button" class="btn btn-secondary">Background color</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="style-group">
+                        <div class="style-group d-flex flex-column">
+                          <h3 class="style-group__title">Style:</h3>
+                          <div class="style-group__checkbox d-flex">
+                            <div class="form-check form-check-inline">
+                              <input data-style-text="bold" class="form-check-input" type="checkbox"
+                                id="inlineCheckbox1" value="bold">
+                              <label class="form-check-label" for="inlineCheckbox1">Bold text</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input data-style-text="italic" class="form-check-input" type="checkbox"
+                                id="inlineCheckbox2" value="italic">
+                              <label class="form-check-label" for="inlineCheckbox2">Cursive text</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="tab-colors">
+                        <div class="color-box box-color-text">
+                          <div class="box-color-text-wrapper">
+                            <div data-color="red" class="colors"></div>
+                            <div data-color="black" class="colors"></div>
+                            <div data-color="white" class="colors"></div>
+                            <div data-color="yellow" class="colors"></div>
+                            <div data-color="orange" class="colors"></div>
+                            <div data-color="blue" class="colors"></div>
+                            <div data-color="pink" class="colors"></div>
+                            <div data-color="brown" class="colors"></div>
+                            <div data-color="darkmagenta" class="colors"></div>
+                          </div>
+                        </div>
+                        <div class="color-box box-bgColor">
+                          <div class="box-bgColor-wrapper">
+                            <div data-color="red" class="colors"></div>
+                            <div data-color="black" class="colors"></div>
+                            <div data-color="white" class="colors"></div>
+                            <div data-color="blue" class="colors"></div>
+                            <div data-color="orange" class="colors"></div>
+                            <div data-color="yellow" class="colors"></div>
+                            <div data-color="pink" class="colors"></div>
+                            <div data-color="darkmagenta" class="colors"></div>
+                            <div data-color="brown" class="colors"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-radio-block ">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="style-group d-flex flex-column">
+            <h3 class="style-group__title" style="font-size: 34px;">Choose what you want:</h3>
+            <div class="style-group__radio d-flex">
+              <form action="" name="f1">
+                <input type="radio" name="table" id="table" >
+                <label for="table">Table</label>
+                <input type="radio" name="list" id="list" checked>
+                <label for="list">List</label>
+              </form>
+            </div>
+            <div class="block-table">
+              <div class="first-input"><label for="tr">Count TR:</label> <input type="text" name="tr" id="tr"></div>
+              <div class="second-input"><label for="tr">Count TD:</label> <input type="text" name="td" id="td"></div>
+              <h3 class="style-group__title" style="font-size: 20px;">Add style to your table:</h3>
+              <div class="first-input1"><label for="wtd">Width TD:</label> <input type="text" name="wtd" id="wtd"></div>
+              <div class="second-input2"><label for="htd">Height TD:</label> <input type="text" name="htd" id="htd"></div>
+              <div class="parametr">
+
+                <div class="first-input11"><label for="width">Width of border:</label> <input type="text" name="width" id="width" placeholder="width"></div>
+
+              <div class="second-input1"><label for="typeob">Type of border:</label>   
+               <select class="form-selectt" aria-label="Default select example">
+                <option selected value="normal">Choose option</option>
+                <option value="solid">solid</option>
+                <option value="dashed">dashed</option>
+                
+          
+              </select>
+            </div>
+              <div class="second-input2"><label for="colorob">Color of border:</label>  
+               <select  class="form-selecttt" aria-label="Default select example">
+                <option selected value="normal">Choose option</option>
+                <option value="red">red</option>
+                <option value="black">black</option>
+                <option value="yellow">yellow</option>
+                <option value="blue">blue</option>
+              </select>
+            </div>
+              </div>
+              <button id="createTable">Create table</button>
+            </div>
+            <div class="block-list">
+              <div class="first-input-list">
+                <label for="li">Count Li:</label>
+                <input type="text" name="li" id="li">
+              </div>
+              <div class="second-input2-list"><label for="typeol">type of marks:</label>  
+                <select class="form-selectl" aria-label="Default select example" id="type">
+                    <option selected value="normal">Choose option</option>
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+               </select>
+             </div>
+             <button id="createList">Create list</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
